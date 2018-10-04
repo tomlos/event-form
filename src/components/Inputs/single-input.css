@@ -1,0 +1,7 @@
+.single-input{
+  flex:1;
+}
+
+.single-input--shortWidth{
+  flex:0;
+}
