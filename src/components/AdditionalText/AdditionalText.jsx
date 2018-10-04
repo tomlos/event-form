@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './additional-text.css';
 
 const AdditionalText = ({ text }) => (
-  <span>{text}</span>
+  <span className="additional-text">{text}</span>
 );
 
 

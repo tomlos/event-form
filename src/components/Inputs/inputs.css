@@ -1,0 +1,68 @@
+input,textarea, select {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="number"], input[type="text"], input[type="date"], input[type="time"]{
+  height: 22px;
+}
+textarea{
+  line-height: 22px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(216, 216,218, 0.8)
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(216, 216,218, 0.8)
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(216, 216,218, 0.8)
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(216, 216,218, 0.8)
+}
+
+.single-input, .multiline-input__textarea{
+  flex-grow:1;
+  padding:0.5em;
+  border-radius: 2px;
+  box-shadow: none;
+  border:1px solid #D8D8DA;
+  font-size: 12px;
+}
+
+.single-input--shortWidth{
+  flex-grow:0;
+}
+
+input[type='date'].single-input{
+  border:2px solid red;
+  /* width:150px; */
+}
+
+.multiline-input{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1
+}
+.multiline-input__textarea{
+  resize:none;
+}
+
+.multiline-input__characters-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: 10px;
+  color: rgba(216, 216,218, 0.8)
+
+}
+
+.dropdown__tip{
+  font-style: italic;
+  font-size: 10px;
+  color: rgba(216, 216,218, 0.8)
+}
+
+

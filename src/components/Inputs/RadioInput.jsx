@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 
 const RadioInput = ({
-  name, values, setRadioValue, valueChecked,
+  name, value, values, onChangeValue,
 }) => (
   <div>
-    { values.map(value => (
+    { values.map(el => (
       <Fragment>
-        <input name={name} value={value} type="radio" onClick={setRadioValue} checked={value === valueChecked} />
-        <span>{value}</span>
+        <input name={name} value={el} type="radio" onClick={onChangeValue} checked={el === value} />
+        <span>{el}</span>
       </Fragment>
     ))}
   </div>

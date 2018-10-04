@@ -8,11 +8,12 @@
 
 .form-card__header{
   padding-bottom:0.5em;
+  margin-bottom: 0.5em;
   border-bottom: 1px solid #D8D8DA;
+
 }
 .form-card__header span {
   font-size: 18px;
   color: #355990;
   font-weight: 500;
-  letter-spacing: 3px;
 }

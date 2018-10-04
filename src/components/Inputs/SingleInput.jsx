@@ -1,26 +1,29 @@
 import React, { Component, Fragment } from 'react';
-import './single-input.css';
+import './inputs.css';
 import classNames from 'classnames';
 
 class SingleInput extends Component {
   render() {
     const {
       name,
-      isRequired,
       type,
       shortWidth,
       placeholder,
+      value,
+      onChangeValue,
     } = this.props;
     return (
       <input
         type={type || 'text'}
         name={name}
         id={name}
+        value={value}
         className={classNames({
           'single-input': true,
           'single-input--shortWidth': shortWidth,
         })}
         placeholder={placeholder}
+        onChange={onChangeValue}
       />
     );
   }
